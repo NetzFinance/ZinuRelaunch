@@ -79,7 +79,7 @@ contract ZinuTimeBenders is ERC721Enumerable, Ownable, ERC721Royalty {
     function airdropNftsViaID(
         address[] memory _recipients,
         uint256[] memory _tokenIds
-    ) external onlyOwner {
+    ) external {
         require(
             _recipients.length == _tokenIds.length,
             "recipients and tokenIds length must be equal"
